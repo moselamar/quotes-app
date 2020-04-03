@@ -8,7 +8,7 @@ An application made bt angular allowing users to post, view other quotes upvote 
 
 ## Setup/Installation requirements
 
-- Clone  or download and unzip the repository from github, [https://github.com/peter-wachira/Quotes-/](https://github.com/moselamar/quotes-app.git).
+- Clone  or download and unzip the repository from github, [https://github.com/moselamar/Quotes-/](https://github.com/moselamar/quotes-app.git).
 - If you have git Use this command `git clone *` to clone the project from the cmd.
 - Run ng serve from your terminal
 
