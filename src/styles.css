@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css"
+
+html, body{
+  height: 100%;
+}
+body {
+			background-image: url(/assets/images/bg.jpg) ;
+			background-position: center center;
+			background-repeat:  no-repeat;
+			background-attachment: fixed;
+			background-size:  cover;
+			background-color: #999;
+
+}
+
+.quoteWord{
+  font-size: 16px;
+ font-family: Georgia,Times,Times New Roman,serif; 
+}

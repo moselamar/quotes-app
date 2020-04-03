@@ -1,0 +1,34 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="navbar-custom">
+
+</div>
+<div class="container">
+  <h1>Inspirational Quotes</h1>
+  <hr>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="myQuote "class = "quoteWord" *ngFor="let quote of quotes; let i=index">
+        <p appHighlight *ngIf="highestUpvote()===quote.upvotes && quote.upvotes>0">
+          {{quote.quote}}
+</p>
+        <p  *ngIf="highestUpvote()!==quote.upvotes || quote.upvotes===0">{{quote.quote}}
+        </p>
+
+        <app-quote-details [quote]="quote"></app-quote-details>
+        <i class="fas fa-thumbs-up" aria-hidden="true"></i>
+        <button class="btn btn-success" (click)="upvote(i)">Upvote </button>
+        <i class=" fas fa-thumbs-down"></i>
+        <button class="btn btn-info"  (click)="downvote(i)">Downvote </button>
+        <i class="fas fa-trash"></i>
+        <button class="btn btn-danger" (click)="delQuote(i)">Delete</button>
+      </div>
+
+      <div class="form">
+          <app-form (emitQuote)="addQuote($event)"></app-form>
+      </div>
+</div>
+</div>
+</div>
